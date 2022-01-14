@@ -66,7 +66,7 @@ public:
 	/* If we got a pending Sig signal, consume it before
 	   unblocking.  */
 	if (ConsumePending)
-	  sigtimedwait (&set, nullptr, &zero_timeout);
+	  sigwait (&set,nullptr);
 
 	sigprocmask (SIG_UNBLOCK, &set, nullptr);
       }

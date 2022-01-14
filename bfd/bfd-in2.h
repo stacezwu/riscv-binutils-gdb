@@ -1524,6 +1524,8 @@ enum bfd_architecture
    && (mach) != bfd_mach_sparc_v8plusm8)
   bfd_arch_spu,       /* PowerPC SPU.  */
 #define bfd_mach_spu           256
+bfd_arch_straight,  /* Straight ISA */
+#define bfd_mach_straight      1
   bfd_arch_mips,      /* MIPS Rxxxx.  */
 #define bfd_mach_mips3000              3000
 #define bfd_mach_mips3900              3900
